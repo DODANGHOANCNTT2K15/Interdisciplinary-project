@@ -4,6 +4,8 @@ This is project for subject
 ## Member
  - Đỗ Đăng Hoàn
  - Chu Tuấn Kiệt
+## Supervisor
+ - Nguyễn Thị Thùy Liên
 ## Idea
 Build a TOEIC test preparation web application
 ## Description
