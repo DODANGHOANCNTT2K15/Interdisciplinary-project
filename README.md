@@ -5,7 +5,7 @@ This is project for subject
  - Đỗ Đăng Hoàn
  - Chu Tuấn Kiệt
 ## Idea
-
+ - TOEIC preparation website
 ## Description
 
 ## Technolory Used
