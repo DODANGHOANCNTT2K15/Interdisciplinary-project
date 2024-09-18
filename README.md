@@ -2,7 +2,8 @@
 This is project for subject
 
 ## Member
- - Đỗ Đăng Hoàn 
+ - Đỗ Đăng Hoàn
+ - Chu Tuấn Kiệt
 ## Idea
 
 ## Description
