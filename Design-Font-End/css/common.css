@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
