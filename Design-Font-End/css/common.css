@@ -1,10 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+         url('/fonts/Gilroy-Regular.woff') format('woff'),
+         url('/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.background-blue{
+    background-color: rgb(20, 78, 165);
+}
 
 .hidden{
     display: none;
@@ -12,4 +27,16 @@
 
 .show{
     display: block;
+}
+
+.text-white{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+button{
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
 }

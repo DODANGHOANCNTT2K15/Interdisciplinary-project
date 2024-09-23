@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/pin_contact.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -23,15 +24,18 @@
                 </div>
                 <div id="header-authencation">
                     <button>Đăng ký</button>
+                    <span>/</span>
                     <button>Đăng nhập</button> 
                 </div>
             </div>
             <div id="header-main">
-                <div id="logo"></div>
+                <div id="logo" style="height: 100%;">
+                    <img src="../../Public/img/zenlish-logo-trang-moi-01.png" height="100%">
+                </div>
                 <div id="header-nav">
                     <ul>
                         <li>
-                            <a href="">Về chúng tôi</a>
+                            <a href="" class="text-white">Về chúng tôi <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-content hidden">
                                 <li><a href="">Hệ thống cơ sở</a></li>
                                 <li><a href="">Tin tức</a></li>
@@ -39,7 +43,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="">Khóa học</a>
+                            <a href="" class="text-white">Khóa học <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-content hidden">
                                 <li><a href="">FOUNDATION</a></li>
                                 <li><a href="">BEGINNER</a></li>
@@ -49,7 +53,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="">Đề thi</a>
+                            <a href="" class="text-white">Đề thi <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-content hidden">
                                 <li><a href="">2017</a></li>
                                 <li><a href="">2018</a></li>
@@ -59,7 +63,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="">Tài liệu TOEIC</a>
+                            <a href="" class="text-white">Tài liệu TOEIC <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-content hidden">
                                 <li><a href="">Listening & Reading</a></li>
                                 <li><a href="">Speaking & Writting</a></li>
@@ -70,7 +74,7 @@
                 <div id="header-btn">
                     <div id="btn-search">
                         <button>
-                            <i class="fas fa-search"></i>
+                            <i class="fas fa-search background-blue" ></i>
                         </button>
                     </div>
                     <div id="btn-test">
@@ -87,40 +91,37 @@
     <footer>
         <div id="footer-top">
             <div id="footer-form-cover">
-                <div id="footer-form">
-                    <form>
-                        <input type="text" placeholder="Họ và tên" required>
-                        <input type="text" placeholder="Số điện thoại" required>
+                <div id="footer-form-img">
+                    <img src="../../Public/img/zenlish-form.jpg">
+                </div>
+                <div id="footer-form" class="background-blue">
+                    <form  class="background-blue">
+                        <div id="cover-require"  class="background-blue">
+                            <input type="text" placeholder="Họ và tên" required>
+                            <input type="text" placeholder="Số điện thoại" required>
+                        </div>
                         <input type="text" placeholder="Trường học (nếu có)">
                         <input type="text" placeholder="Bạn cần bằng TOEIC để làm gì?">
-                        <!-- Lựa chọn trình độ -->
-                        <label for="level">Bạn nghĩ mình đang ở trình độ nào?</label>
                         <select id="level">
-                            <option value="">Chọn trình độ</option>
+                            <option value="">Bạn nghĩ mình đang ở trình độ nào?</option>
                             <option value="beginner">Mới bắt đầu</option>
                             <option value="intermediate">Trung cấp</option>
                             <option value="advanced">Cao cấp</option>
                         </select>
-
-                        <!-- Lựa chọn mục tiêu chinh phục -->
-                        <label for="goal">Chọn mục tiêu chinh phục bạn muốn!</label>
                         <select id="goal">
-                            <option value="">Chọn mục tiêu</option>
+                            <option value="">Chọn mục tiêu chinh phục bạn muốn!</option>
                             <option value="toeic_450">TOEIC 450+</option>
                             <option value="toeic_650">TOEIC 650+</option>
                             <option value="toeic_850">TOEIC 850+</option>
                         </select>
-
-                        <!-- Lựa chọn lộ trình học TOEIC -->
-                        <label for="path">Lộ trình học TOEIC mà bạn quan tâm</label>
                         <select id="path">
-                            <option value="">Chọn lộ trình</option>
+                            <option value="">Lộ trình học TOEIC mà bạn quan tâm</option>
                             <option value="intensive">Khóa học cấp tốc</option>
                             <option value="standard">Khóa học tiêu chuẩn</option>
                             <option value="long_term">Khóa học dài hạn</option>
                         </select>
 
-                        <button type="submit" value="ĐĂNG KÝ NGAY"></button>
+                        <button type="submit">ĐĂNG KÝ NGAY</button>
                     </form>
                 </div>
             </div>
@@ -128,66 +129,66 @@
                 <div id="footer-question">
                     <h1>Câu hỏi thương gặp về lộ trình học TOEIC</h1>
                     <ul>
-                        <li class="hidden">
-                            <h3>TOEIC là gì?</h3>
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> TOEIC là gì?</h3>
                             <p>TOEIC là bài kiểm tra đánh giá khả năng sử dụng tiếng Anh trong môi trường làm việc quốc tế.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
                         
-                        <li class="hidden">
-                            <h3>Tôi có thể tự học TOEIC được không?</h3>
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> Tôi có thể tự học TOEIC được không?</h3>
                             <p>Bạn hoàn toàn có thể tự học TOEIC nếu có phương pháp học tập hiệu quả và kỷ luật.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    
-                        <li class="hidden">
-                            <h3>TOEIC có giao tiếp được không?</h3>
+                        
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> TOEIC có giao tiếp được không?</h3>
                             <p>TOEIC chủ yếu kiểm tra khả năng đọc hiểu và nghe, nhưng vẫn có ích trong giao tiếp công việc.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    
-                        <li class="hidden">
-                            <h3>Chứng chỉ TOEIC có được công nhận không?</h3>
+                        
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> Chứng chỉ TOEIC có được công nhận không?</h3>
                             <p>Chứng chỉ TOEIC được công nhận rộng rãi tại nhiều công ty và tổ chức trên toàn cầu.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    
-                        <li class="hidden">
-                            <h3>Lộ trình học 1 lần là đạt tại Zenlish có cam kết không?</h3>
+                        
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> Lộ trình học 1 lần là đạt tại Zenlish có cam kết không?</h3>
                             <p>Zenlish có cam kết hỗ trợ học viên đạt mục tiêu nếu tuân thủ đúng lộ trình học.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    
-                        <li class="hidden">
-                            <h3>Học TOEIC có khó không?</h3>
+                        
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> Học TOEIC có khó không?</h3>
                             <p>Học TOEIC không quá khó nếu bạn có kế hoạch học tập khoa học và chăm chỉ.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    
-                        <li class="hidden">
-                            <h3>Nên chọn TOEIC hay IELTS?</h3>
+                        
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> Nên chọn TOEIC hay IELTS?</h3>
                             <p>Lựa chọn giữa TOEIC và IELTS phụ thuộc vào mục tiêu sử dụng tiếng Anh của bạn.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    
-                        <li class="hidden">
-                            <h3>Các loại chi phí khi học TOEIC?</h3>
+                        
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> Các loại chi phí khi học TOEIC?</h3>
                             <p>Chi phí học TOEIC bao gồm học phí, sách vở và phí đăng ký thi TOEIC.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    
-                        <li class="hidden">
-                            <h3>Cách đăng ký thi TOEIC</h3>
+                        
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> Cách đăng ký thi TOEIC</h3>
                             <p>Bạn có thể đăng ký thi TOEIC trực tiếp tại các trung tâm tổ chức thi hoặc qua hình thức trực tuyến.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    
-                        <li class="hidden">
-                            <h3>Những sai lầm thường gặp khi học TOEIC là gì?</h3>
+                        
+                        <li>
+                            <h3><i class="fas fa-chevron-down"></i> Những sai lầm thường gặp khi học TOEIC là gì?</h3>
                             <p>Những sai lầm phổ biến gồm học thiếu phương pháp, không luyện tập đầy đủ và bỏ qua phần nghe.</p>
-                            Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a>
+                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
                         </li>
-                    </ul>                    
+                    </ul>                
                 </div>
             </div>
         </div>
@@ -195,8 +196,8 @@
             <div id="footer-base">
                 <h2>TRUNG TÂM ANH NGỮ ROCKET</h2>
                 <ul>
-                    <li>Cơ sở 1 - Kim Mã: Số 22A ngách 25, ngõ 629 Kim Mã, phường Ngọc Khánh, Ba Đình, Hà Nội</li>
-                    <li>Cơ sở 1 - Kim Mã: Số 22A ngách 25, ngõ 629 Kim Mã, phường Ngọc Khánh, Ba Đình, Hà Nội</li>
+                    <li><b>Cơ sở 1 - Kim Mã:</b> Số 22A ngách 25, ngõ 629 Kim Mã, phường Ngọc Khánh, Ba Đình, Hà Nội</li>
+                    <li><b>Cơ sở 1 - Kim Mã:</b> Số 22A ngách 25, ngõ 629 Kim Mã, phường Ngọc Khánh, Ba Đình, Hà Nội</li>
                 </ul>
                 <button href="">XEM BẢN ĐỒ</button>
             </div>
@@ -208,7 +209,7 @@
                         <span>0353.546.276</span>
                     </li>
                     <li>
-                        <i class="fas fa-email"></i>
+                        <i class="fas fa-envelope"></i>
                         <span>21010666@st.phenikaa-uni.edu.vn</span>
                     </li>
                 </ul>
@@ -225,25 +226,33 @@
                     </li>
                 </ul>
             </div>
-            <div id="footer-fanpage">
+            <div id="footer-fanpage-cover">
                 <h2>FANPAGE CHÍNH THỨC</h2>
                 <a href="" target="_blank">
                     <div class="footer-fanpage">
-                        <img src="your-image-link.jpg" alt="Rocket to Moon Fanpage">
+                        <div class="footer-cover-image-fanpage">
+                            <img src="../../Public/img/zenlish-logo-trang-moi-01.png" width="100%">
+                        </div>
                         <h2>Rocket to moon</h2>
                         <p>50.000 người theo dõi</p>
                     </div>
                 </a>
-                
+                <a href="" target="_blank">
+                    <div class="footer-fanpage">
+                        <div class="footer-cover-image-fanpage">
+                            <img src="../../Public/img/zenlish-logo-trang-moi-01.png" width="100%">
+                        </div>
+                        <h2>Rocket to moon</h2>
+                        <p>50.000 người theo dõi</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div id="footer-bottom">
-            <div id="footer-copycright">
-                Copyright 2024 © Rocket
-            </div>
+            Copyright 2024 © Rocket
         </div>
     </footer>
-    <div class="side-bar">
+    <div class="side-bar hidden">
         <div id="side-bar-zalo">
             <i class="fas fa-comments"></i>
         </div>
