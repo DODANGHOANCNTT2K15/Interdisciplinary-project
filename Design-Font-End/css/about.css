@@ -1,0 +1,100 @@
+#div-about-1{
+    padding: 50px 20%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#div-about-1 div:nth-child(1){
+    width: 50%;
+    padding-right: 50px;
+}
+#div-about-1 div:nth-child(1) h1{
+    margin-bottom: 10px;
+    color: blue;
+    font-weight: bold;
+}
+
+#div-about-1 div:nth-child(1) p{
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#div-about-1 div:nth-child(2){
+    width: 50%;
+    height: cover;
+}
+
+#div-about-1 div:nth-child(2) iframe{
+    width: 100%;
+    height: 400px;
+}
+
+#main-about div:nth-child(3)>div{
+    width: 50%;
+    background-color: blue;
+    padding: 60px;
+}
+#main-about div:nth-child(3){
+    display: flex;
+}
+
+#main-about div:nth-child(3) div h1, 
+#main-about div:nth-child(3) div p,
+#main-about div:nth-child(3) div ul li{
+    color: white;
+}
+#main-about div:nth-child(3) div h1{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#main-about div:nth-child(3) div p{
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+#main-about div:nth-child(3) div ul li{
+    margin-left: 26px;
+    list-style: number;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#main-about div:nth-child(4){
+    padding: 50px 20%;
+}
+#main-about div:nth-child(4) div:nth-child(1) {
+    margin-bottom: 80px;
+}
+#main-about div:nth-child(4) div:nth-child(1) ul{
+    display: flex;
+    justify-content: space-between;
+}
+#main-about div:nth-child(4) div:nth-child(1) ul li{
+    list-style: none;
+}
+#main-about div:nth-child(4) div:nth-child(2){
+    text-align: center
+}
+#main-about div:nth-child(4) div:nth-child(2) h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#main-about div:nth-child(4) div:nth-child(2) p{
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+#main-about div:nth-child(4) div:nth-child(2) img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+#main-about div:nth-child(4) div:nth-child(2) div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#main-about div:nth-child(4) div:nth-child(2) div div{
+    width: 30%;
+    height: 180px;
+    padding: 0px;
+    margin: 10px;
+}

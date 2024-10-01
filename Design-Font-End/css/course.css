@@ -1,0 +1,40 @@
+#main-div-course{
+    padding: 50px 20%;
+}
+#main-div-course div:nth-child(1) {
+    margin-bottom: 80px;
+}
+#main-div-course div:nth-child(1) ul{
+    display: flex;
+    justify-content: space-between;
+}
+#main-div-course div:nth-child(1) ul li{
+    list-style: none;
+}
+#main-div-course div:nth-child(2){
+    text-align: center
+}
+#main-div-course div:nth-child(2) h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#main-div-course div:nth-child(2) p{
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+#main-div-course div:nth-child(2) img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+#main-div-course div:nth-child(2) div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#main-div-course div:nth-child(2) div div{
+    width: 30%;
+    height: 180px;
+    padding: 0px;
+    margin: 10px;
+}

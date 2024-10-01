@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Gilroy', sans-serif;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 @font-face {
@@ -31,6 +32,10 @@
 
 .text-white{
     color: white;
+}
+
+.cover-image{
+    overflow: hidden;
 }
 
 .flex{
