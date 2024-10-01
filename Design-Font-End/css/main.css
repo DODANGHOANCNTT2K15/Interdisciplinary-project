@@ -1,4 +1,240 @@
 main{
     width: 100vw;
-    height: 500px;
+    height: auto;
+}
+
+.main-div{
+    height: 610px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+#div-1-banner{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 40px;
+}
+
+#div-1-advise{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+#div-1-advise h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#div-1-advise button{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(252, 131, 33);
+    color: white;
+    font-weight: bold;
+}
+
+#div-1-nav-action{
+    width: 50%;
+}
+
+#div-1-banner-nav{
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 80px;
+}
+#div-1-banner-nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+#div-1-banner-nav ul li{
+    list-style: none;
+}
+
+.main-div-2-header h1,h2{
+    font-weight: bold;
+}
+.main-div-2-header h1{
+    margin-bottom: 10px;
+}
+.main-div-2-header h2{
+    font-size: 17px;
+}
+.main-div-2{
+    background-color: rgb(216, 216, 216);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+}
+.main-div-2>div>div{
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+.main-div-3{
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 50px;
+}
+
+.main-div-3 h1,input{
+    font-weight: bold;
+}
+
+.main-div-3 h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-div-3>div>div li{
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.664);
+    width: 32%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    
+}
+.main-div-3>div>div li label{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+.main-div-3>div>div ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-div-3>div>div:last-child{
+    display: flex;
+    justify-content: center;
+}
+.main-div-3>div>div:last-child button{
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 102, 0, 0.87);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main-div-4{
+    background-color: rgb(255, 255, 255);
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 50px;
+    height: auto;
+}
+
+.main-div-4>div h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.main-div-4>div>div:last-child h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+.main-div-4>div>div:last-child>div>ul{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.main-div-4>div>div:last-child>div>ul li{
+    list-style: none;
+    height: 50px;
+    width: 30%;
+    background-color: rgb(255, 102, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: large;
+}
+
+#div-main-4-nav{
+    height: 400px;
+    background-color: rgb(56, 56, 56);
+    margin-bottom: 30px;
+}
+
+.main-div-5{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    text-align: center;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    height: auto;
+}
+.main-div-5>div>h1{
+    font-weight: bold;
+}
+.main-div-5>div>div:last-child{
+    height: 300px;
+    background-color: rgb(70, 70, 70);
+    margin-top: 30px;
+}
+
+.main-div-6{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
+.main-div-6>div:first-child{
+    background-color: rgb(21, 73, 245);
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.main-div-6>div:first-child>h1,h3{
+    color: white;
+    font-size: 15px;
+}
+.main-div-6>div:first-child h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.main-div-6>div:first-child span{
+    font-weight: bold;
+    color: rgb(255, 102, 0);
+}
+.main-div-6>div:last-child{
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.main-div-6>div:last-child h1{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.main-div-6>div:last-child>div>img{
+    width: 120px;
+    height: 120px;
 }

@@ -1,0 +1,21 @@
+#side-bar{
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+
+.side-bar-cover{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(4, 80, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.side-bar-cover>i{
+    font-size: 19px;
+    color: white;
+}
