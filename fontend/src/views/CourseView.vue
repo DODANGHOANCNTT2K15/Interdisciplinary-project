@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocket - COURSE</title>
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/pin_contact.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/authencation.css">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/course.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+<template>
 <main>
     <div class="main-div main-div-3">
         <div>
@@ -119,22 +104,71 @@
             <p>Với sự đa dạng các khóa học offline & online, mỗi học viên sẽ có cơ hội trải nghiệm phương pháp và lộ trình học tiếng Anh độc đáo, chỉ duy nhất tại Zenlish. Học viên sẽ dễ dàng tiếp nhận kiến thức, đạt mục tiêu TOEIC chỉ sau 1 lần học.</p>
             <div>
                 <div class="cover-image">
-                    <img src="../../Public/img/zenlish-1.jpg" alt="">
+                    <img src="../../public/img/zenlish-1.jpg" alt="">
                 </div>
                 <div class="cover-image">
-                    <img src="../../Public/img/zenlish-2.jpg" alt="">
+                    <img src="../../public/img/zenlish-2.jpg" alt="">
                 </div>
                 <div class="cover-image">
-                    <img src="../../Public/img/zenlish-3.jpg" alt="">
+                    <img src="../../public/img/zenlish-3.jpg" alt="">
                 </div>
                 <div class="cover-image">
-                    <img src="../../Public/img/zenlish-4.jpg" alt="">
+                    <img src="../../public/img/zenlish-4.jpg" alt="">
                 </div>
                 <div class="cover-image">
-                    <img src="../../Public/img/zenlish-5.jpg" alt="">
+                    <img src="../../public/img/zenlish-5.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 </main>
-</html>
+</template>
+
+<script>
+export default{
+    name: 'CourseView'
+}
+</script>
+
+<style scoped>
+#main-div-course{
+    padding: 50px 20%;
+}
+#main-div-course div:nth-child(1) {
+    margin-bottom: 80px;
+}
+#main-div-course div:nth-child(1) ul{
+    display: flex;
+    justify-content: space-between;
+}
+#main-div-course div:nth-child(1) ul li{
+    list-style: none;
+}
+#main-div-course div:nth-child(2){
+    text-align: center
+}
+#main-div-course div:nth-child(2) h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#main-div-course div:nth-child(2) p{
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+#main-div-course div:nth-child(2) img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+#main-div-course div:nth-child(2) div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#main-div-course div:nth-child(2) div div{
+    width: 30%;
+    height: 180px;
+    padding: 0px;
+    margin: 10px;
+}
+</style>
