@@ -25,15 +25,14 @@
                     <ul>
                         <li>
                             <router-link to="/about" class="text-white">Về chúng tôi <i class="fas fa-chevron-down"></i></router-link>
-                            <ul class="dropdown-content hidden">
-                                <li><a href="">Hệ thống cơ sở</a></li>
+                            <ul class="dropdown-content">
+                                <li><router-link to="/base" class="text-white">Hệ thống cơ sở</router-link></li>
                                 <li><a href="">Tin tức</a></li>
-                                <li><a href="">Tuyển dụng</a></li>
                             </ul>
                         </li>
                         <li>
                             <router-link to="/course" class="text-white">Khóa học <i class="fas fa-chevron-down"></i></router-link>
-                            <ul class="dropdown-content hidden">
+                            <ul class="dropdown-content">
                                 <li><a href="">FOUNDATION</a></li>
                                 <li><a href="">BEGINNER</a></li>
                                 <li><a href="">CAMP BOMB</a></li>
@@ -42,18 +41,11 @@
                             </ul>
                         </li>
                         <li>
-                            <router-link to="/exams" class="text-white">Đề thi <i class="fas fa-chevron-down"></i></router-link>
-                            <ul class="dropdown-content hidden">
-                                <li><a href="">2017</a></li>
-                                <li><a href="">2018</a></li>
-                                <li><a href="">2019</a></li>
-                                <li><a href="">2020</a></li>
-                                <li><a href="">2021</a></li>
-                            </ul>
+                            <router-link to="/exams" class="text-white">Đề thi</router-link>
                         </li>
                         <li>
                             <a href="" class="text-white">Tài liệu TOEIC <i class="fas fa-chevron-down"></i></a>
-                            <ul class="dropdown-content hidden">
+                            <ul class="dropdown-content">
                                 <li><a href="">Listening & Reading</a></li>
                                 <li><a href="">Speaking & Writting</a></li>
                             </ul>
@@ -76,6 +68,13 @@
 header{
     height: 128px;
     width: 100vw;  
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 #header-wrapper{
@@ -233,7 +232,25 @@ export default {
   methods: {
     gotoTestOnilne() {
         this.$router.push('/test-online');
+    },
+    handleScroll() {
+        const headerMain = document.getElementById('header-main');
+        const stickyPoint = headerMain.offsetTop;
+
+        if (window.scrollY > stickyPoint) {
+            if (!headerMain.classList.contains('sticky')) {
+            headerMain.classList.add('sticky');
+            }
+        } else {
+            headerMain.classList.remove('sticky');
+        }
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
     }
-  }
 };
 </script>

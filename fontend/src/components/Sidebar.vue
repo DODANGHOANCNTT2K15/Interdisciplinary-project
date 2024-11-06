@@ -8,6 +8,9 @@
         </div>
         <div id="side-bar-phone" class="side-bar-cover">
             <i class="fas fa-phone"></i>
+            <div id="phone">
+                0353-546-276
+            </div>
         </div>
         <div id="side-bar-instal" class="side-bar-cover">
             <i class="fab fa-instagram"></i>
@@ -19,17 +22,40 @@
 </template>
 
 <style scoped>
-    #side-bar{
+#side-bar{
     position: fixed;
     bottom: 0px;
     right: 10px;
 }
 
+#side-bar-phone{
+    position: relative;
+}
+
+#phone{
+    position: fixed;
+    top: 0px;
+    right: 50px;
+    width: 150px;
+    background-color: #444343;
+    height: 50px;
+    color: white;
+    border-radius: 20px;
+    display: none;
+}
+
+#side-bar-phone:hover > #phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .side-bar-cover{
     animation: shake 2s infinite; 
     height: 40px;
     width: 40px;
-    background-color: #333333;
+    background-color: #444343;
     display: flex;
     justify-content: center;
     align-items: center;

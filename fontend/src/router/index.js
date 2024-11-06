@@ -8,6 +8,9 @@ import ExamView from '@/views/ExamView.vue';
 import TestLayout from '@/components/TestLayout.vue';
 import SelectPastExam from '@/views/SelectPastExam.vue';
 import TestExam from '@/views/TestExam.vue';
+import ExamDetailView from '@/views/ExamDetailView.vue';
+import BaseView from '@/views/BaseView.vue';
+import NewsView from '@/views/NewsView.vue';
 
 const routes = [
   {
@@ -18,7 +21,10 @@ const routes = [
       { path: 'about', name: 'About', component: AboutView },
       { path: 'login', name: 'Login', component: Login },
       { path: 'course', name: 'Course', component: CourseView},
-      { path: 'exams', name: 'Exams', component: ExamView}
+      { path: 'exams', name: 'Exams', component: ExamView},
+      { path: 'exam-detail', name: 'ExamDetail', component: ExamDetailView},
+      { path: 'base', name: 'Base', component: BaseView},
+      { path: 'news', name: 'News', component: NewsView}
     ]
   },
   {

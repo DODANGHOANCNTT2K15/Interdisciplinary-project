@@ -30,49 +30,65 @@
             </form>
         </div>
         <div class="exams_cover_card">
-            <div class="card">
-                <h3>IELTS Simulation</h3>
-                <h3>Listening test 1</h3>
-                <div class="info">
-                    <span class="icon"><i class="fas fa-clock"></i> 40 phút</span>
-                    <span>|</span>
-                    <span class="icon"><i class="fas fa-users"></i> 697092</span>
-                    <span>|</span>
-                    <span class="icon"><i class="fas fa-comments"></i> 2114</span>
-                </div>
-                <p>4 phần thi | 40 câu hỏi</p>
-                <div class="tags">
-                    <span class="tag">#IELTS Academic</span>
-                    <span class="tag">#Listening</span>
-                </div>
-                <button class="details-btn">Chi tiết</button>
-            </div>
-            <div class="card">
-                <h3>IELTS Simulation</h3>
-                <h3>Listening test 1</h3>
-                <div class="info">
-                    <span class="icon"><i class="fas fa-clock"></i> 40 phút</span>
-                    <span>|</span>
-                    <span class="icon"><i class="fas fa-users"></i> 697092</span>
-                    <span>|</span>
-                    <span class="icon"><i class="fas fa-comments"></i> 2114</span>
-                </div>
-                <p>4 phần thi | 40 câu hỏi</p>
-                <div class="tags">
-                    <span class="tag">#IELTS Academic</span>
-                    <span class="tag">#Listening</span>
-                </div>
-                <button class="details-btn">Chi tiết</button>
-            </div>
+            <ExamCard
+                v-for="(exam, index) in exams"
+                :key="index"
+                :title="exam.title"
+                :subtitle="exam.subtitle"
+                :duration="exam.duration"
+                :participants="exam.participants"
+                :comments="exam.comments"
+                :sections="exam.sections"
+                :questions="exam.questions"
+                :tags="exam.tags"
+                @view-details="handleViewDetails(index)"
+            />
         </div>
     </div>
 </main>
 </template>
 
 <script>
-export default{
-    name: "ExamView",
-}
+import ExamCard from '@/components/ExamCard.vue';
+
+export default {
+  name: 'ExamView',
+  components: {
+    ExamCard,
+  },
+  data() {
+    return {
+      exams: [
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 1',
+          duration: '40 phút',
+          participants: 697092,
+          comments: 2114,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+      ]
+    };
+  },
+  methods: {
+    handleViewDetails(index) {
+      console.log(`Chi tiết cho bài kiểm tra: ${this.exams[index].title}`);
+      this.$router.push({ name: 'ExamDetail'});
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -122,84 +138,9 @@ export default{
     font-size: 15px;
 }
 
-/* Card container */
-.exams_cover_card{
-    display: flex;
-}
-.card {
-  width: 200px;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  text-align: left;
-  font-family: Arial, sans-serif;
-  margin-bottom: 25px;
-  margin: 20px;
-}
-
-.card h3 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 0 10px;
-  color: #333;
-}
-
-.info {
+.exams_cover_card {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  font-size: 14px;
-  color: #6c757d;
-  margin-bottom: 10px;
-}
-
-.icon {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.icon i {
-  margin-right: 5px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #555;
-  margin: 0 0 10px;
-}
-
-.tags {
-  margin-bottom: 10px;
-}
-
-.tag {
-  display: inline-block;
-  background-color: #e3f2fd;
-  color: #1a73e8;
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 12px;
-  margin-right: 5px;
-}
-
-.details-btn {
-  display: block;
-  width: 100%;
-  padding: 8px;
-  text-align: center;
-  color: #1a73e8;
-  background-color: transparent;
-  border: 1px solid #1a73e8;
-  border-radius: 4px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.details-btn:hover {
-  background-color: #1a73e8;
-  color: #fff;
+  gap: 20px;
 }
 </style>

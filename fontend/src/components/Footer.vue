@@ -1,6 +1,9 @@
 <template>
     <footer>
         <div id="footer-top">
+            <div class="title">
+                <h1>ĐĂNG KÝ TƯ VẤN</h1>
+            </div>
             <div id="footer-form-cover">
                 <div id="footer-form-img">
                     <img src="../../public/img/rocket-form-person.png">
@@ -64,12 +67,6 @@
                         </li>
                         
                         <li>
-                            <h3><i class="fas fa-chevron-down"></i> Lộ trình học 1 lần là đạt tại Zenlish có cam kết không?</h3>
-                            <p>Zenlish có cam kết hỗ trợ học viên đạt mục tiêu nếu tuân thủ đúng lộ trình học.</p>
-                            <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
-                        </li>
-                        
-                        <li>
                             <h3><i class="fas fa-chevron-down"></i> Học TOEIC có khó không?</h3>
                             <p>Học TOEIC không quá khó nếu bạn có kế hoạch học tập khoa học và chăm chỉ.</p>
                             <p>Tìm hiểu chi tiết hơn <a href="#">TẠI ĐÂY</a></p>
@@ -109,7 +106,7 @@
                     <li><b>Cơ sở 1 - Kim Mã:</b> Số 22A ngách 25, ngõ 629 Kim Mã, phường Ngọc Khánh, Ba Đình, Hà Nội</li>
                     <li><b>Cơ sở 1 - Kim Mã:</b> Số 22A ngách 25, ngõ 629 Kim Mã, phường Ngọc Khánh, Ba Đình, Hà Nội</li>
                 </ul>
-                <button href="">XEM BẢN ĐỒ</button>
+                <button @click="gotoBase">XEM BẢN ĐỒ</button>
             </div>
             <div id="footer-contact">
                 <h2>CÔNG TY TNHH TƯ VẤN GIÁO DỤC VÀ XÚC TIỀN THƯƠNG MẠI ROCKET</h2>
@@ -170,6 +167,20 @@ footer{
 }
 
 /* footer 1 */
+.title{
+    background-color: rgb(35, 35, 35);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title > h1{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 #footer-top{
     background-color: white;
 }
@@ -184,7 +195,7 @@ footer{
     align-items: end;
     box-sizing: border-box;
     border-radius: 20px;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 #footer-form-img{
@@ -205,7 +216,7 @@ footer{
 
 #footer-form{
     width: 30vw;
-    height: 400px;
+    height: 380px;
     background-color: #333333;
     border-radius: 10px 10px 0 0;
     padding: 15px;
@@ -356,6 +367,9 @@ footer{
     width: 30%;
 }
 
+#footer-contact i{
+    margin-right: 15px;
+}
 
 #footer-fanpage-cover a{
     display: block;
@@ -407,6 +421,13 @@ footer{
 
 <script>
 export default {
-  name: 'AppFooter'
+  name: 'AppFooter',
+  methods: {
+    gotoBase(){
+        this.$router.push('/base').then(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+  }
 };
 </script>

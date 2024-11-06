@@ -6,22 +6,19 @@
                 <h1>Lộ trình luyện thi TOEIC<br>
                     theo đúng trình độ nền của cá nhân bạn</h1>
             </div>
-            <div>
+            <div> 
                 <h3>Hãy lựa chọn trình độ hiện tại của bạn</h3>
                 <div>
                     <ul>
                         <li>
-                            <input type="radio" value="">  
                             <label for="">TOEIC: 1 - 295
                                 Mất gốc LR</label>
                         </li>
                         <li>
-                            <input type="radio" value="">
                             <label for="">TOEIC: 300 - 595
                                 Cơ bản LR</label>
                         </li>
                         <li>
-                            <input type="radio" value="">
                             <label for="">TOEIC: 600 - 650
                                 Có nền tảng LR</label>
                         </li>
@@ -31,17 +28,14 @@
                 <div>
                     <ul>
                         <li>
-                            <input type="radio" value="">
                             <label for="">TOEIC: 300
                                 Cơ bản</label>
                         </li>
                         <li>
-                            <input type="radio" value="">
                             <label for="">TOEIC: 600
                                 Khá</label>
                         </li>
                         <li>
-                            <input type="radio" value="">
                             <label for="">TOEIC: 800+
                                 Xuất sắc</label>   
                         </li>
@@ -49,9 +43,7 @@
                 </div>
             </div>
             <div>
-                <button>Làm bài kiểm tra đầu vào</button>
-                <button>Xác định trình độ và mục tiêu click vào đây 
-                    để được tư vấn lộ trình miễn phí</button>
+                <button @click="gotoTestOnline">Làm bài kiểm tra đầu vào</button>
             </div>
         </div>
     </div>
@@ -126,7 +118,12 @@
 
 <script>
 export default{
-    name: 'CourseView'
+    name: 'CourseView',
+    methods: {
+        gotoTestOnline() {
+            this.$router.push('/test-online');
+        }
+    }
 }
 </script>
 
