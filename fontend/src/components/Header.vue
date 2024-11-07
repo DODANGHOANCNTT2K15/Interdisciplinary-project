@@ -27,7 +27,7 @@
                             <router-link to="/about" class="text-white">Về chúng tôi <i class="fas fa-chevron-down"></i></router-link>
                             <ul class="dropdown-content">
                                 <li><router-link to="/base" class="text-white">Hệ thống cơ sở</router-link></li>
-                                <li><a href="">Tin tức</a></li>
+                                <li><router-link to="/news" class="text-white">Tin tức</router-link></li>
                             </ul>
                         </li>
                         <li>

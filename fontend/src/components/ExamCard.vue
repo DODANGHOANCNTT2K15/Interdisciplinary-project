@@ -44,7 +44,7 @@ export default {
     display: flex;
 }
 .card {
-  width: 200px;
+  width: 180px;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

@@ -31,7 +31,7 @@
         </div>
         <div class="exams_cover_card">
             <ExamCard
-                v-for="(exam, index) in exams"
+                v-for="(exam, index) in paginatedExams"
                 :key="index"
                 :title="exam.title"
                 :subtitle="exam.subtitle"
@@ -43,6 +43,18 @@
                 :tags="exam.tags"
                 @view-details="handleViewDetails(index)"
             />
+        </div>
+        <div class="pagination">
+            <button @click="previousPage" :disabled="currentPage === 1">Previous</button>
+            <button 
+            v-for="page in totalPages" 
+            :key="page" 
+            @click="goToPage(page)"
+            :class="{ active: page === currentPage }"
+            >
+            {{ page }}
+            </button>
+            <button @click="nextPage" :disabled="currentPage === totalPages">Next</button>
         </div>
     </div>
 </main>
@@ -79,13 +91,218 @@ export default {
           questions: 40,
           tags: ['#IELTS Academic', '#Listening'],
         },
-      ]
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+        {
+          title: 'IELTS Simulation',
+          subtitle: 'Listening test 2',
+          duration: '40 phút',
+          participants: 702123,
+          comments: 2200,
+          sections: '4 phần thi',
+          questions: 40,
+          tags: ['#IELTS Academic', '#Listening'],
+        },
+      ],
+      currentPage: 1,
+      pageSize: 12,
     };
+  },
+  computed: {
+    totalPages() {
+      return Math.ceil(this.exams.length / this.pageSize);
+    },
+    paginatedExams() {
+      const start = (this.currentPage - 1) * this.pageSize;
+      const end = start + this.pageSize;
+      return this.exams.slice(start, end);
+    }
   },
   methods: {
     handleViewDetails(index) {
       console.log(`Chi tiết cho bài kiểm tra: ${this.exams[index].title}`);
       this.$router.push({ name: 'ExamDetail'});
+    },
+    goToPage(page) {
+        this.currentPage = page;
+    },
+    nextPage() {
+      if (this.currentPage < this.totalPages) {
+        this.currentPage++;
+      }
+    },
+    previousPage() {
+      if (this.currentPage > 1) {
+        this.currentPage--;
+      }
     }
   }
 };
@@ -142,5 +359,32 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #373737;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button.active {
+    background-color: #ee3e04;
+    font-weight: bold;
 }
 </style>
