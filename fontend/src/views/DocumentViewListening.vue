@@ -1,7 +1,7 @@
 <template>
 <main>
     <div class="div-title">
-        <h1>TIN TỨC</h1>
+        <h1>Tài liệu - Listening</h1>
     </div>
     <div class="mainNew">
         <div class="new-main">
@@ -42,15 +42,15 @@
             </div>
         </div>
     </div>
-</main>  
+</main>
 </template>
-
+    
 <script>
 import DocumentCard from "@/components/DocumentCard.vue";
 import NewsCard from "@/components/NewsCard.vue";
 
 export default {
-    name: "DocumentView",
+    name: "NewsView",
     components: {
         NewsCard,
         DocumentCard
@@ -60,8 +60,8 @@ export default {
             newsItems: [
                 {
                     imageSrc: "..//..//public//img//zenlish-1.jpg",
-                    title: "Tai lieu ",
-                    content: "Chương trình giúp bạn đạt trình độ B1 với các phương pháp học hiệu quả và hỗ trợ tối đa từ đội ngũ giảng viên...",
+                    title: "Lộ trình đổi B1 ra trường đúng hạn chỉ trong 5 tháng",
+                    content: "1. Trình độ tiếng Anh B1 là gì? Trình độ tiếng Anh B1 là cấp độ thứ ba trong sáu bậc của khung năng lực ngoại ngữ...",
                 },
                 {
                     imageSrc: "..//..//public//img//zenlish-2.jpg",
@@ -130,7 +130,7 @@ export default {
     }
 };
 </script>
-
+    
 <style scoped>
 .mainNew{
     margin-top: 30px;

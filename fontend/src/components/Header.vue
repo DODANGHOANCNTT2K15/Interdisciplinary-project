@@ -31,23 +31,13 @@
                             </ul>
                         </li>
                         <li>
-                            <router-link to="/course" class="text-white">Khóa học <i class="fas fa-chevron-down"></i></router-link>
-                            <ul class="dropdown-content">
-                                <li><a href="">FOUNDATION</a></li>
-                                <li><a href="">BEGINNER</a></li>
-                                <li><a href="">CAMP BOMB</a></li>
-                                <li><a href="">SUBMARINE</a></li>
-                                <li><a href="">MASTER</a></li>
-                            </ul>
-                        </li>
-                        <li>
                             <router-link to="/exams" class="text-white">Đề thi</router-link>
                         </li>
                         <li>
-                            <a href="" class="text-white">Tài liệu TOEIC <i class="fas fa-chevron-down"></i></a>
+                            <router-link to="/document" class="text-white">Tài liệu TOEIC <i class="fas fa-chevron-down"></i></router-link>
                             <ul class="dropdown-content">
-                                <li><a href="">Listening & Reading</a></li>
-                                <li><a href="">Speaking & Writting</a></li>
+                                <li><router-link to="/document/listening" class="text-white">Listening & Reading</router-link></li>
+                                <li><router-link to="/document/speaking" class="text-white">Speaking & Writting</router-link></li>
                             </ul>
                         </li>
                     </ul>
