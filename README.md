@@ -15,7 +15,7 @@ The TOEIC test preparation web application is an online platform designed to hel
  - https://study4.com/
 
 ## Technolory Used
- - Database: mySQL
+ - Database: SQL server
  - Font end: HTML, CSS, JS
  - Back end: String boot
 ## IDE
